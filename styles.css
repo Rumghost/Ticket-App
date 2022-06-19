@@ -1,0 +1,29 @@
+body {
+    background-color: aliceblue;
+}
+
+#home-rect {
+    position: absolute;
+    width: 25%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), #79FCF4;
+}
+
+#home-rect ul li {
+    list-style: none;
+    color: aliceblue;
+    padding-bottom: 20px;
+    font-size: 20px;
+}
+
+h3 {
+    color: aliceblue;
+    text-align: center;
+    font-size: 25px;
+}
+
+h4 {
+   
+}
