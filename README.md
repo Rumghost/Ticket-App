@@ -1,2 +1,2 @@
 # Ticket-App
-Making a ticket requet and fulfilment application
+Making a ticket request and fulfilment application
