@@ -1,3 +1,9 @@
+:root{
+    --add-butt:red;
+    --add-butt-hover:blue;
+    --add-butt-active:green;
+}
+
 body {
     background-color: aliceblue;
     width: auto;
@@ -50,7 +56,7 @@ h3 {
     margin-right:2rem;
     margin-bottom:2rem;
     border-radius:50%;
-    border:0.5rem solid red;
+    border:0.5rem solid var(--add-butt);
     display:flex;
     justify-content:center;
     align-items:center;
@@ -58,10 +64,11 @@ h3 {
 }
 
 .add-butt :where(.p1,.p2){
+    content:'';
     position:absolute;
     height:50%;
     aspect-ratio:0.25/1;
-    background-color:red;
+    background-color:var(--add-butt);
 }
 
 .add-butt .p2{
@@ -69,20 +76,20 @@ h3 {
 }
 
 .add-butt:hover{
-    border-color:blue;
+    border-color:var(--add-butt-hover);
 }
 
 .add-butt:hover :where(.p1,.p2){
-    background-color:blue;
+    background-color:var(--add-butt-hover);
 }
 
 .add-butt:active{
-    border-color:green;
+    border-color:var(--add-butt-active);
     transform:scale(0.75);
 }
 
 .add-butt:active :where(.p1,.p2){
-    background:green;
+    background:var(--add-butt-active);
 }
 
 /*Add button End*/
