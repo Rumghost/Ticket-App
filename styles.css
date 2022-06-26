@@ -64,7 +64,6 @@ h3 {
 }
 
 .add-butt :where(.p1,.p2){
-    content:'';
     position:absolute;
     height:50%;
     aspect-ratio:0.25/1;
