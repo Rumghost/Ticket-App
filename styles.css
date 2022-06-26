@@ -39,6 +39,8 @@ h3 {
     font-size: 25px;
 }
 
+/*Add button*/
+
 .add-butt{
     height:3rem;
     aspect-ratio:1/1;
@@ -55,7 +57,7 @@ h3 {
     cursor:pointer;
 }
 
-.add-butt::before,.add-butt::after{
+.add-butt :where(.p1,.p2){
     content:'';
     position:absolute;
     height:50%;
@@ -63,6 +65,25 @@ h3 {
     background-color:red;
 }
 
-.add-butt::after{
+.add-butt .p2{
     transform:rotate(90deg);
 }
+
+.add-butt:hover{
+    border-color:blue;
+}
+
+.add-butt:hover :where(.p1,.p2){
+    background-color:blue;
+}
+
+.add-butt:active{
+    border-color:green;
+    transform:scale(0.75);
+}
+
+.add-butt:active :where(.p1,.p2){
+    background:green;
+}
+
+/*Add button End*/
