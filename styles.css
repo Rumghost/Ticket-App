@@ -52,6 +52,7 @@ h3 {
     display:flex;
     justify-content:center;
     align-items:center;
+    cursor:pointer;
 }
 
 .add-butt::before,.add-butt::after{
@@ -59,7 +60,7 @@ h3 {
     position:absolute;
     height:50%;
     aspect-ratio:0.25/1;
-    background-color:red;
+    background-color:inherit;
 }
 
 .add-butt::after{
