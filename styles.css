@@ -39,9 +39,29 @@ h3 {
     font-size: 25px;
 }
 
-img {
-    position:fixed;
-    right: 10%;
-    bottom: 10%;
-    height: 50px;
+.add-butt{
+    height:3rem;
+    aspect-ratio:1/1;
+    position:absolute;
+    bottom:0;
+    right:0;
+    margin-right:2rem;
+    margin-bottom:2rem;
+    border-radius:50%;
+    border:0.5rem solid red;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.add-butt::before,.add-butt::after{
+    content:'';
+    position:absolute;
+    height:50%;
+    aspect-ratio:0.25/1;
+    background-color:red;
+}
+
+.add-butt::after{
+    transform:rotate(90deg);
 }
