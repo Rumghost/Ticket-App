@@ -60,7 +60,7 @@ h3 {
     position:absolute;
     height:50%;
     aspect-ratio:0.25/1;
-    background-color:inherit;
+    background-color:red;
 }
 
 .add-butt::after{
